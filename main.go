@@ -1,12 +1,14 @@
 package main
 
 import (
-	"terraform-provider-testing/testing"
-
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
+	"github.com/honeybeehacker/terraform-provider-testing/testing"
 )
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
-		ProviderFunc: testing.Provider})
+		ProviderFunc: func() *schema.Provider {
+			return provider.Provider()
+		},
+	})
 }
