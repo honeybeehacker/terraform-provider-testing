@@ -1,4 +1,4 @@
-module terraform-provider-testing
+module github.com/honeybeehacker/terraform-provider-testing
 
 go 1.17
 
