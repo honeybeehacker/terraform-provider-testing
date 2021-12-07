@@ -1,2 +1,2 @@
 # terraform-provider-testing
-A testing project for terraform plugin
+Testing project for Terraform provider
