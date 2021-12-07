@@ -1,7 +1,7 @@
 package main
 
 import (
-	"terraform-provider-testing/testing"
+	"github.com/honeybeehacker/terraform-provider-testing"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
 )
 
