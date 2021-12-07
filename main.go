@@ -1,14 +1,12 @@
+  GNU nano 5.4                                     main.go                                               
 package main
 
 import (
-	"github.com/honeybeehacker/terraform-provider-testing"
-	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
+        "github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
+        "terraform-provider-testing/testing"
 )
 
 func main() {
-	plugin.Serve(&plugin.ServeOpts{
-		ProviderFunc: func() *schema.Provider {
-			return provider.Provider()
-		},
-	})
+        plugin.Serve(&plugin.ServeOpts{
+                ProviderFunc: testing.Provider})
 }
